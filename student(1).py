@@ -1,5 +1,18 @@
+from dbm import sqlite3
 from tkinter import *
 from tkinter import ttk
+import pymysql
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+conn = pymysql.connector.connect(
+    host=os.getenv("DB_HOST"),
+    user=os.getenv("DB_USER"),
+    password=os.getenv("DB_PASSWORD"),
+    database=os.getenv("DB_NAME")
+)
 
 class Student:
     def __init__(self, root):
@@ -122,7 +135,20 @@ class Student:
         self.Student_table.heading('Email', text='Email')
         self.Student_table.heading('Phone', text='Phone')
 
-        
+        self.Student_table.column('ID', width=100)
+        self.Student_table.column('Student Name', width=200)
+        self.Student_table.column('Student ID', width=100)
+        self.Student_table.column('Gender', width=100)
+        self.Student_table.column('Email', width=200)
+        self.Student_table.column('Phone', width=100)
+
+        def add_students(self):
+            conn = pymysql.connect(
+                host=os.getenv("DB_HOST"),
+                user=os.getenv("DB_USER"),
+                password=os.getenv("DB_PASSWORD"),
+                database=os.getenv("DB_NAME")
+            )  
 
 root = Tk()
 ob = Student(root)
