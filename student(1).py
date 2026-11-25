@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-conn = pymysql.connector.connect(
+conn = pymysql.connect(
     host=os.getenv("DB_HOST"),
     user=os.getenv("DB_USER"),
     password=os.getenv("DB_PASSWORD"),
@@ -149,6 +149,16 @@ class Student:
                 password=os.getenv("DB_PASSWORD"),
                 database=os.getenv("DB_NAME")
             )  
+            cur=conn.cursor()
+            cur.execute("INSERT INTO students (id, stname, stid, gender, email) VALUES (%s, %s, %s, %s, %s)", (
+                self.id_var.get(),
+                self.stname_var.get(),
+                self.stid_var.get(),
+                self.gender_var.get(),
+                self.email_var.get()
+            ))
+
+            conn.commit()
 
 root = Tk()
 ob = Student(root)
