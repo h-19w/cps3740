@@ -1,0 +1,61 @@
+What is a data model?;A relatively simple, often graphical representation of complex real-world data structures
+What does data modeling reduce?;The complexities of database design
+True or False: Data modeling is a one-time, non-iterative process.;False (it is iterative and progressive)
+What does a data model help facilitate?;Interaction among the designer, applications programmer, and end-user
+Name the five basic data-modeling building blocks.;Entity, attribute, relationship, and constraint (plus business rules)
+What is an entity?;Anything about which data are to be collected and stored (a person, place, or thing) - represented as a table
+What is an attribute?;A characteristic of an entity
+What is a relationship?;An association among entities
+What is a one-to-many (1:M) relationship?;A relationship where one entity instance relates to many instances of another entity
+What is a many-to-many (M:N) relationship?;A relationship where many instances of one entity relate to many instances of another
+What is a one-to-one (1:1) relationship?;A relationship where one entity instance relates to exactly one instance of another entity
+What is a constraint?;A restriction placed on the data
+What are business rules?;Descriptions of policies, procedures, or principles within a specific organization
+List two sources of business rules.;Company managers and policy makers (also: written documentation, procedures, standards, direct interviews with end users)
+Give one reason for identifying and documenting business rules.;They help standardize the company's view of data (also: serve as a communication tool, help create an accurate data model)
+What is a hierarchical model represented by?;An upside-down tree containing segments
+What is a segment in a hierarchical model?;The equivalent of a file system's record type
+What relationships does a hierarchical model depict?;One-to-many (1:M) relationships
+What relationships can a network model depict?;Both one-to-many (1:M) and many-to-many (M:N) relationships
+Who developed the relational model, and when?;E.F. Codd (IBM) in 1970
+What is a tuple?;A row in a relation (table)
+What does RDBMS stand for?;Relational Database Management System
+What is the abbreviation for Relational Database Management System?;RDBMS
+Name the three parts of an SQL-based relational database application.;User interface, set of tables, and the SQL engine
+Who introduced the Entity Relationship model, and when?;Chen, in 1976
+What does ERD stand for?;Entity Relationship Diagram
+What is the abbreviation for Entity Relationship Diagram?;ERD
+What is an entity instance (occurrence)?;A row in a table
+What is an entity set?;A collection of like entities
+In Chen notation, how are relationships represented?;By a diamond, with the relationship name written inside it
+Which notation is used as the design standard in the textbook for ER diagrams?;Crow's Foot notation
+What is an object in the object-oriented data model?;Something that contains data and its relationships, along with operations performed on it
+What is a class (OODM)?;A collection of similar objects with shared structure and behavior, organized in a class hierarchy
+What is inheritance in the OODM?;When an object inherits methods and attributes of its parent class
+What does UML stand for?;Unified Modeling Language
+What is the abbreviation for Unified Modeling Language?;UML
+What does UML describe?;Sets of diagrams and symbols used to graphically model a system
+What does ERDM stand for?;Extended Relational Data Model
+What is the abbreviation for Extended Relational Data Model?;ERDM
+What is an O/RDBMS?;An object/relational database management system
+What are the three characteristics ("3 Vs") of Big Data?;Volume, Velocity, and Variety
+True or False: NoSQL databases are based on the relational model.;False
+What storage approach do NoSQL databases commonly use?;Key-value stores
+List one advantage of NoSQL databases.;High scalability, availability, and fault tolerance (also: low-cost hardware, supports Big Data)
+List one disadvantage of NoSQL databases.;Complex programming is required (also: no relationship support, no transaction integrity support)
+What consistency model do NoSQL databases typically provide?;An eventually consistent model
+What framework did ANSI define in the 1970s for data modeling?;A framework based on degrees of data abstraction
+Name the three levels of data abstraction described by ANSI.;External, conceptual, and internal (with physical sometimes added as a fourth)
+What is the external model?;The end users' view of the data environment, represented using ER diagrams
+What is an external schema?;A specific representation of an external view
+What is the conceptual model?;A global view of the entire database, software and hardware independent
+What is a conceptual schema?;The basis for identifying and describing the main data objects at a high level
+What is logical design?;The task of creating a conceptual data model
+What is the internal model?;A representation of the database as seen by the DBMS, mapping the conceptual model to the DBMS
+What is an internal schema?;A specific representation of an internal model
+What is logical independence?;The ability to change the internal model without affecting the conceptual model
+What is the physical model?;The model operating at the lowest level of abstraction, describing how data are saved on storage media
+What is physical independence?;When changes in the physical model do not affect the internal model
+Fill in the blank: The relational model is aimed at the _______ level and does not require physical-level details.;logical
+Which model type is the most simple and abstract? A) Physical B) Conceptual C) Hierarchical D) Object-oriented;B) Conceptual
+Which of these is NOT one of the three levels of data abstraction defined by ANSI? A) External B) Conceptual C) Internal D) Relational;D) Relational

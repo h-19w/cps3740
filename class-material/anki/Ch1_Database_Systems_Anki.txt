@@ -1,0 +1,63 @@
+What is data?;Raw, unprocessed facts
+What is information?;The result of processing raw data to reveal meaning
+What does information require to reveal meaning?;Context
+Data are the foundation of what?;Information, which is the bedrock of knowledge
+What is the key to good decision making?;Accurate, relevant, timely information
+What is a database?;A shared, integrated computer structure that stores a collection of end-user data and metadata
+What is end-user data?;Raw facts of interest to the end user
+What is metadata?;Data about data (information about data)
+What does metadata provide?;A description of data characteristics and relationships, or information about an item's content
+Give an example of metadata for an image.;Size, color depth, resolution, and creation date
+Give an example of metadata for a text document.;Document length, author, date written, and a short summary
+What are meta tags used for on web pages?;To describe a web page's content (e.g. description and keywords) so search engines can index it
+True or False: Metadata complements and expands the value of data.;True
+What is a DBMS?;A database management system - a collection of programs that manages the structure of and controls access to data
+What does DBMS stand for?;Database Management System
+What is the abbreviation for Database Management System?;DBMS
+What role does the DBMS play between the user and the database?;It acts as the intermediary
+True or False: Users can only access database files through the DBMS.;True
+List three advantages of a DBMS.;Improved data sharing, improved data security, better data integration (also: minimized inconsistency, improved access, improved decision making, increased productivity)
+What is a single-user database?;A database that supports only one user at a time
+What is a desktop database?;A single-user database that runs on a PC locally
+What is a multiuser database?;A database that supports multiple users at the same time
+What are workgroup and enterprise databases examples of?;Multiuser databases
+What is a centralized database?;A database with data located at a single site
+What is a distributed (decentralized) database?;A database with data distributed across several different sites
+What is an operational (transactional/production) database?;A database that supports a company's day-to-day operations
+What is a data warehouse?;A database that stores data used for tactical or strategic decisions
+Why is database design important?;A well-designed database facilitates data management and generates accurate, valuable information; a poorly designed one causes difficult-to-trace errors
+What did databases evolve from?;Manual and computerized file systems
+What is a file system typically composed of?;A collection of file folders, each tagged and organized by expected use
+List two reasons for studying file systems.;Complexity of database design is easier to understand; understanding file system problems helps avoid problems with DBMS systems (also: useful for converting file systems to database systems)
+True or False: Ad hoc queries are easy to perform in a file system.;False
+List two limitations of file system data management.;Requires extensive programming; cannot perform ad hoc queries (also: complex administration, difficult to change structure, inadequate security)
+What is structural dependence?;When access to a file depends on its own structure, requiring all programs to be modified if the structure changes
+What is structural independence?;The ability to change a file's structure without affecting data access
+What is data dependence?;When data access changes whenever data storage characteristics change
+What is data independence?;When data storage characteristics do not affect data access
+What is data inconsistency?;When different and conflicting versions of the same data occur at different places
+What is a data anomaly?;An abnormality that occurs when not all changes in redundant data are made correctly
+Fill in the blank: An update anomaly occurs when data is only _______ updated in a database.;partially
+Fill in the blank: An insertion anomaly occurs when you cannot add a new property without also adding its _______.;owner
+What is a deletion anomaly?;When data is unintentionally lost due to the deletion of other data
+What are the five components of a database system?;Data, hardware, software, procedures, and people
+What is hardware in the context of a database system?;All of the system's physical devices (PC, workstation, server, mainframe, supercomputer)
+Name the three types of software required by a database system.;Operating system software, DBMS software, and application programs/utility software
+Give an example of DBMS software.;IBM DB2, Oracle, or MySQL
+List three types of people involved in a database system.;System/database administrators, database designers, systems analysts and programmers (also: end users)
+What are procedures in a database system?;Instructions and rules that govern the design and use of the database system
+What is the data dictionary?;A DBMS component that stores definitions of data elements and relationships (metadata)
+Fill in the blank: DBMS function [1] is _______ management, which stores metadata in a data dictionary.;data dictionary
+What is performance tuning?;Activities that make the database perform more efficiently
+What is data transformation and presentation (DBMS function)?;Transforming entered data to conform to required structures, and transforming retrieved data to match user expectations
+What does DBMS security management do?;Creates a security system enforcing user security and data privacy
+What is multiuser access control?;A DBMS function using algorithms to ensure concurrent access does not affect data integrity
+What does backup and recovery management provide?;Backup and data recovery to ensure database safety and integrity after a failure
+What is data integrity management?;A DBMS function that promotes and enforces integrity rules, minimizing redundancy and maximizing consistency
+What is SQL?;Structured Query Language - the de facto nonprocedural query language supported by most DBMS vendors
+What is the abbreviation for Structured Query Language?;SQL
+What does the abbreviation SQL stand for?;Structured Query Language
+Name a way DBMSs provide database communication interfaces.;Web browser screen forms, automatically publishing reports on a website, or connecting to third-party systems via email
+True or False: Data is the bedrock of knowledge, while information is the foundation.;False (data is the foundation, information is the bedrock of knowledge)
+Which of the following is NOT a component of a database system? A) Hardware B) Software C) Marketing D) People;C) Marketing
+Which term describes a database supporting multiple simultaneous users? A) Desktop database B) Single-user database C) Multiuser database D) Flat file;C) Multiuser database

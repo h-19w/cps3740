@@ -1,0 +1,48 @@
+What view of data does the relational model offer?;A logical view, rather than a physical one
+What is a relation in the relational model?;The basic component - a logical construct composed of rows (tuples) and columns (attributes)
+How are relations implemented in a relational DBMS?;As tables
+True or False: The relational database model is easier to understand than hierarchical and network models.;True
+What must be true of each row in a table?;It must be uniquely identifiable
+What is a key?;One or more attributes that determine other attributes
+What is functional dependence?;When attribute B is functionally dependent on A if all rows agreeing in value for A also agree in value for B
+What is a null?;The absence of a data entry, representing an unknown value, a known but missing value, or a not-applicable condition
+True or False: Nulls are permitted in a primary key.;False
+List one problem nulls can cause.;Problems with functions like COUNT, AVERAGE, and SUM (also: logical problems when tables are linked)
+What is a foreign key (FK)?;An attribute whose values match primary key values in a related table
+What is referential integrity?;When a foreign key contains a value that refers to an existing valid row in another relation
+What is a secondary key?;A key used strictly for data retrieval purposes
+What do designers use to avoid nulls?;Flags, which indicate the absence of some value
+What does relational algebra define?;A theoretical way of manipulating table contents using relational operators
+Name four relational algebra operators.;SELECT, PROJECT, UNION, INTERSECT (also: DIFFERENCE, JOIN, PRODUCT, DIVIDE)
+What does the SELECT operator do?;Selects rows from a table
+What does the PROJECT operator do?;Selects columns from a table
+What is a Natural Join?;A join that links tables by selecting rows with common values in common attributes
+What is an Equijoin?;A join linking tables based on an equality condition comparing specified columns
+What is a Theta join?;A join using any comparison operator other than equality
+What is an Outer join?;A join where matched pairs are retained and unmatched values in the other table are left null
+What is the data dictionary?;A detailed accounting of all tables in a database, including attribute names and characteristics (metadata)
+What is the system catalog?;A detailed system data dictionary describing all objects within the database
+Fill in the blank: The system catalog and data dictionary both contain _______, which is data about data.;metadata
+Which relationship type is the relational modeling ideal and should be the norm?;The 1:M (one-to-many) relationship
+True or False: The 1:1 relationship should be common in relational database design.;False (it should be rare)
+What might a 1:1 relationship indicate?;That entity components were not properly defined, or that two entities actually belong in the same table
+Can M:N relationships be directly implemented in the relational model?;No - they must be changed into 1:M relationships using a composite entity
+What is a composite entity used for?;To break an M:N relationship into a set of 1:M relationships, including foreign keys of the linked tables
+What can data redundancy lead to?;Data anomalies, which can destroy the effectiveness of the database
+How do foreign keys help control data redundancy?;By using common attributes shared by tables
+True or False: Data redundancy is always bad and never necessary.;False (sometimes data redundancy is necessary)
+What is an index?;An orderly arrangement used to logically access rows in a table
+What is an index key?;The index's reference point, pointing to the data location identified by the key
+What is a unique index?;An index in which the index key can have only one row (pointer value) associated with it
+True or False: An index can be associated with more than one table.;False (each index is associated with only one table)
+Who published a list of 12 rules for relational database systems, and when?;E.F. Codd, in 1985
+True or False: All dominant database vendors fully support all 12 of Codd's rules.;False
+What is a superkey?;A key that can uniquely identify any row in a table (may include extra attributes)
+What is a candidate key?;A minimal superkey - one with no unnecessary attributes
+What is a primary key?;The candidate key selected to uniquely identify rows in a table
+List the four relational algebra operators that produce set-based results.;UNION, INTERSECT, DIFFERENCE, PRODUCT
+Fill in the blank: A(n) _______ join retains matched pairs and leaves unmatched values null.;outer
+What does DBMS stand for (abbreviation review)?;Database Management System
+What is the abbreviation for Database Management System?;DBMS
+Which relationship type must be broken into 1:M relationships? A) 1:1 B) 1:M C) M:N D) None;C) M:N
+Which key type is used strictly for data retrieval? A) Primary key B) Foreign key C) Secondary key D) Superkey;C) Secondary key
